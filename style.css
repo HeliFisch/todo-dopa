@@ -1,0 +1,70 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  margin: 0;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+  color: #444;
+}
+input, button {
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  margin: 4px 0;
+}
+button {
+  background-color: #00b894;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #019875;
+}
+.task, .reward {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.subtask {
+  margin-top: 10px;
+}
+.progress-container {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.progress-bar {
+  background: #00cec9;
+  height: 20px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+.points-display {
+  background: #ffeaa7;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.complete-btn {
+  background-color: #d63031;
+  margin-left: 10px;
+}
+.complete-btn:hover {
+  background-color: #b71c1c;
+}
+.reward-btn {
+  background-color: #fdcb6e;
+  margin-left: 10px;
+}
+.reward-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

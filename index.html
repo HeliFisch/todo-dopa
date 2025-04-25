@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>🌈 To-Do & Belohnungs-App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌟 Meine To-Do & Belohnungs-App</h1>
+
+<div class="points-display">Punkte: <span id="points">0</span></div>
+
+<div class="progress-container">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<h2>➕ Neue Aufgabe</h2>
+<input type="text" id="taskName" placeholder="Aufgabentitel">
+<button onclick="addTask()">Aufgabe hinzufügen</button>
+
+<div id="tasks"></div>
+
+<h2>🎁 Belohnungen</h2>
+<input type="text" id="rewardName" placeholder="Belohnung">
+<input type="number" id="rewardCost" placeholder="Kosten in Punkten" min="1">
+<label>
+  <input type="checkbox" id="rewardRepeatable">
+  mehrfach einlösbar
+</label>
+<button onclick="addReward()">Belohnung hinzufügen</button>
+
+<div id="rewards"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
