@@ -5,7 +5,22 @@
   <title>🐦 To-Do & Belohnungs-App</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAKv0DtJ5tnMzBLf1bF_WZzNU-6DWa57X8",
+      authDomain: "meine-aufgaben-app.firebaseapp.com",
+      projectId: "meine-aufgaben-app",
+      storageBucket: "meine-aufgaben-app.firebasestorage.app",
+      messagingSenderId: "100058669913",
+      appId: "1:100058669913:web:6733af354ffedcd6242248"
+      };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
 </head>
 <body>
 
